@@ -1,0 +1,50 @@
+/* cluster */
+
+.browse-page .cluster-container:first-child {
+	margin-top: 25px;
+}
+
+.cluster-container {
+	text-align: left;
+	width: 100%;
+}
+
+.cluster {
+	display: inline-block;
+	margin: 5px 0 15px 0;
+	position: relative;
+	text-align: left;
+	width: 100%;
+}
+
+.cluster-heading {
+	cursor: default;
+	font-size: 28px;
+	font-weight: 100;
+	margin: 0 50px 0 248px;
+	min-height: 37px;
+	min-width: 680px;
+	padding: 5px;
+	position: relative;
+	width: 850px;
+}
+
+.cluster .see-more {
+	bottom: 14px;
+	margin-top: 5px;
+	position: absolute;
+	right: 5px;
+}
+
+.cluster-heading .subtitle {
+	color: #555;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	padding-bottom: 4px;
+	display: block;
+}
+
+.cluster .card-list {
+	margin-left: 248px;
+}

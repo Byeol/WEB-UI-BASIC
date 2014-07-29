@@ -1,0 +1,86 @@
+/* action bar */
+
+.action-bar-container {
+	height: 48px;
+	min-width: 964px;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.action-bar-inner {
+	width: 100%;
+}
+
+.action-bar {
+	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+	background: #fff;
+	height: 48px;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+.action-bar-item {
+	display: inline-block;
+	height: 48px;
+	vertical-align: top;
+}
+
+.action-bar-item:first-child {
+	margin-left: 238px;
+}
+
+.action-bar-dropdown-container {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.action-bar-dropdown, .action-bar-link {
+	-webkit-font-smoothing: antialiased;
+	color: #737373;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	height: 48px;
+	line-height: 48px;
+	text-decoration: none;
+	vertical-align: top;
+}
+
+.action-bar-dropdown-top {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	padding: 0 14px;
+}
+
+.action-bar-aux:last-child {
+	display: inline-block;
+	position: absolute;
+	right: 30px;
+}
+
+.action-bar-aux:last-child .play-button.small {
+	margin: 0px 10px;
+	padding: 0px;
+	top: 10px;
+}
+
+.action-bar-spacer {
+	background: #d6d6d6;
+	display: inline-block;
+	height: 64%;
+	margin: 9px 5px;
+	padding: 0;
+	width: 1px;
+}
+
+.action-bar-link.active {
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	color: #333;
+	font-weight: 500;
+	height: 45px;
+}

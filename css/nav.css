@@ -1,0 +1,137 @@
+/* nav */
+
+.nav-container {
+	background-color: rgba(245, 245, 245, 0.952941);
+	background: #f5f5f5;
+	display: block;
+	width: 200px;
+	height: 240px;
+	float: left;
+	position: absolute;
+}
+
+.show-all-hover-zone {
+	background-color: #fff;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	width: 24px;
+	z-index: 1052;
+	height: 240px;
+}
+
+.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+}
+
+.nav-list-item {
+	display: inline-block;
+	line-height: normal;
+	padding: 0;
+	position: absolute;
+	z-index: 1053;
+}
+
+.nav .menu-link {
+	display: block;
+	height: 48px;
+	overflow: hidden;
+	text-decoration: none;
+	width: 200px!important;
+}
+
+.nav .menu-link .selected {
+	width: 200px;
+	background-color: rgb(26, 161, 225);
+}
+
+.nav .hover-target {
+	display: table;
+	height: 48px;
+	position: absolute;
+	width: 200px;
+}
+
+.nav .books .selected .hover-target {
+	background-color: #1aa1e1;
+}
+
+.nav .books .icon-container {
+	background-color: #1aa1e1;
+}
+
+.nav .selected .icon-container {
+	width: 65px;
+}
+
+.nav .icon-container {
+	background-position: center;
+	background-repeat: no-repeat;
+	display: table-cell;
+	height: 48px;
+	position: absolute;
+	width: 65px;
+}
+
+.nav .menu-link .title {
+	color: #555;
+	display: table-cell;
+	font-size: 18px;
+	font-weight: 300;
+	left: 56px;
+	line-height: 20px;
+	vertical-align: middle;
+	width: 127px;
+	color: rgb(255, 255, 255);
+}
+
+.nav .selected .title {
+	color: white;
+	display: table-cell;
+}
+
+.nav .sub-nav {
+	font-size: 18px;
+	list-style-type: none;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	position: absolute;
+}
+
+.nav .non-store-sub-nav {
+	left: 24px;
+	width: 176px;
+}
+
+.nav .non-store-sub-nav .sub-nav-option a {
+	line-height: 20px;
+	padding: 8px 12px 8px 23px;
+}
+
+.nav .store-corpus-link, .nav .sub-nav-link, .nav .shop-link, .nav .library-link {
+	display: block;
+}
+
+.nav .selected .icon-container {
+	width: 65px;
+}
+
+.nav .icon-container {
+	background-position: center;
+	background-repeat: no-repeat;
+	display: table-cell;
+	height: 48px;
+	position: absolute;
+	width: 65px;
+}
+
+.nav .icon {
+	display: block;
+	height: 24px;
+	margin: 12px 0 0 28px;
+	width: 24px;
+}
