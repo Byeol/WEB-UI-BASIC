@@ -1,5 +1,16 @@
 /* action bar */
 
+.dropdown-icon{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAjUlEQVQoz2P4//8/A7mYYYhrzs3N5SsqKsoE0jLYFGZmZgoWFhZmAYEEhmagxsri4uL/QPwYaIAyssbs7GxhoPwFkDyQnoOhGWiqLlDyA7oBaBp/AdW5YfVzfn6+ObIBeXl5xsgagXQA3gBDM+AnLo04QxtqwHeoAX+xacQbVUC/RQA1vQQF5HBNYeRgAKO6bfkUgtZHAAAAAElFTkSuQmCC);
+	background-position-y: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 15px;
+	margin: 17px 3px 1px 3px;
+	vertical-align: top;
+	width: 15px;
+}
+
 .action-bar-container {
 	height: 48px;
 	min-width: 964px;
@@ -83,4 +94,22 @@
 	color: #333;
 	font-weight: 500;
 	height: 45px;
+}
+
+.action-bar-link a, .action-bar-link a:visited, .action-bar-link.active a {
+	color: #737373;
+	display: block;
+	font-weight: 400;
+	height: 100%;
+	padding: 0 14px;
+	width: 100%;
+}
+
+.books .action-bar-link.active {
+	color: #1aa1e1;
+}
+
+.action-bar-link.active a {
+	color: #333;
+	font-weight: 500;
 }

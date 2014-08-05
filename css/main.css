@@ -10,6 +10,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, 
 /* button global attribute */
 
 button {
+	-webkit-font-smoothing: inherit;
 	background: none;
 	border: 0;
 	color: inherit;
@@ -70,11 +71,102 @@ main {
 
 header {
 	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
 
 .header-content {
 	height: 60px;
 	width: 100%;
+	background: #f1f1f1;
+}
+
+header, #header-placeholder {
+	height: 60px;
+}
+
+.play-icon-container {
+	height: 100%;
+	width: 244px;
+	float: left;
+	line-height: 58px;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+
+.play-link-container {
+	padding: 0 30px 0 30px;
+}
+
+.play-link {
+	display: inline-block;
+	outline: none;
+	vertical-align: middle;
+}
+
+.play-link-image {
+	display: block;
+	background-image: url('http://www.gstatic.com/android/market_images/web/play_logo_x2.png');
+	width: 183px;
+	height: 39px;
+	background-size: 183px 39px;
+}
+
+.header-serach-container {
+	width: 650px;
+	float: left;
+	padding-top: 15px;
+}
+
+.header-search-form {
+	background: transparent;
+	border: none;
+	margin-top: 4px;
+	padding: 0;
+	vertical-align: top;
+	width: 100%;
+	color: #222;
+	font: 16px arial,sans-serif;
+}
+
+.header-search-fieldset {
+	float: left;
+}
+
+.header-search-wrapper {
+	height: 28px;
+	background: #fff;
+	background-clip: padding-box;
+	border: 1px solid #cdcdcd;
+	border-color: rgba(0,0,0,.15);
+	border-right-width: 0;
+}
+
+.header-search-button-wrapper {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.header-search-button {
+	border: 1px solid transparent;
+	height: 30px;
+	width: 60px;
+	background: #4285f4;
+	float: left;
+}
+
+.header-serach-button-image {
+	display: block;
+	background-image: url('http://ssl.gstatic.com/gb/images/v2_e41a714c.png');
+	background-size: 112px 1828px;
+	background-position: -69px -349px;
+	display: inline-block;
+	margin: -1px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
 }
 
 
