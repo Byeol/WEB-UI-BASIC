@@ -13,10 +13,6 @@
 	float: left;
 }
 
-body.phone-optimized .cluster .card {
-	float: none;
-}
-
 .card.small.tall-cover {
 	height: 330px;
 	width: 160px;
@@ -177,10 +173,6 @@ body.phone-optimized .cluster .card {
 	position: absolute;
 	top: 0;
 	width: 100%;
-}
-
-body.phone-optimized .card .preview-overlay-container {
-	display: none;
 }
 
 .card:hover .preview-overlay-container,

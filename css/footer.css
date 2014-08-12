@@ -13,9 +13,6 @@
 	margin: 0 auto;
 }
 
-body.phone-optimized #show-more-button {
-	margin: 20px auto;
-}
 
 .footer {
 	background: #e5e5e5;
@@ -28,11 +25,6 @@ body.phone-optimized #show-more-button {
 .footer-links-container {
 	margin-left: 248px;
 	padding: 28px 5px;
-}
-
-body.phone-optimized .footer-links-container {
-	margin-left: 0;
-	padding: 15px;
 }
 
 .copyright {
