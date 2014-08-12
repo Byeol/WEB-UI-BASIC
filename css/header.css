@@ -1,0 +1,187 @@
+/* header */
+
+header {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.header-content {
+	height: 60px;
+	width: 100%;
+	background: #f1f1f1;
+	display: flex;
+}
+
+header, #header-placeholder {
+	height: 60px;
+}
+
+.header-play-container {
+	height: 100%;
+	width: 244px;
+	float: left;
+	line-height: 58px;
+	vertical-align: middle;
+	padding-top: 10px;
+	flex: 0 0 auto;
+}
+
+.play-link-container {
+	padding: 0 30px 0 30px;
+}
+
+.play-link {
+	display: inline-block;
+	outline: none;
+	vertical-align: middle;
+}
+
+.play-link-image {
+	display: block;
+	background-image: url('http://www.gstatic.com/android/market_images/web/play_logo_x2.png');
+	width: 183px;
+	height: 39px;
+	background-size: 183px 39px;
+}
+
+.header-serach-container {
+	width: 650px;
+	float: left;
+	flex: 0 2 auto;
+	min-width: 200px;
+}
+
+.header-search-wrapper {
+	padding-top: 15px;
+}
+
+.header-search-form {
+	background: transparent;
+	border: none;
+	height: 20px;
+	margin-top: 4px;
+	padding: 0;
+	vertical-align: top;
+	width: 100%;
+	color: #222;
+	font: 16px arial,sans-serif;
+	display: flex;
+}
+
+.header-search-form:hover,
+.header-search-form:focus {
+	outline: none;
+}
+
+.header-search-fieldset {
+	width: 100%;
+	flex: 1 1 auto;
+	display: inline-block;
+}
+
+.header-search-form-wrapper {
+	background: #fff;
+	background-clip: padding-box;
+	border: 1px solid #cdcdcd;
+	border-color: rgba(0,0,0,.15);
+	border-right-width: 0;
+	padding: 0 8px;
+	height: 30px;
+	box-sizing: border-box;
+}
+
+.header-search-form-wrapper:hover {
+	border-color: #a9a9a9;
+	border-color: rgba(0,0,0,.3);
+}
+
+.header-search-form-wrapper:active {
+	border-color: #4285f4;
+}
+
+.header-search-button-wrapper {
+	display: inline-block;
+	vertical-align: top;
+	flex: 0 0 auto;
+}
+
+.header-search-button {
+	border: 1px solid transparent;
+	height: 30px;
+	width: 60px;
+	background: #4285f4;
+	float: left;
+	text-align: center;
+	border-radius: 2px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	box-sizing: border-box;
+}
+
+.header-search-button .search-icon {
+	display: block;
+	background-image: url('http://ssl.gstatic.com/gb/images/v2_e41a714c.png');
+	background-size: 112px 1828px;
+	background-position: -69px -349px;
+	display: inline-block;
+	margin: -1px;
+	height: 30px;
+	width: 30px;
+}
+
+.header-menu-container {
+	display: flex;
+	flex: 1 1 auto;
+	float: right;
+	order: 1;
+	justify-content: flex-end;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	min-width: 113px;
+}
+
+.header-menu {
+	display: flex;
+	flex: 0 1 auto;
+}
+
+.login-icon-container {
+	padding: 0 0 0 15px;
+}
+
+.login-icon-link {
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	outline: none;
+	background: #4285f4;
+	display: inline-block;
+	line-height: 28px;
+	padding: 0 12px;
+	border-radius: 2px;
+	color: #fff;
+	width: 42px;
+}
+
+.app-icon {
+	background-image: url('http://ssl.gstatic.com/gb/images/v2_e41a714c.png');
+	background-size: 112px 1828px;
+	background-position: -51px -452px;
+	opacity: .55;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+
+.app-icon:hover {
+	opacity: 1;
+}
+
+.header-container {
+	height: 60px;
+	line-height: 58px;
+	vertical-align: middle;
+}

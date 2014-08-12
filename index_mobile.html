@@ -1,136 +1,43 @@
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 	<title id="main-title">Google Play 도서</title>
 	<meta content="웹에서 Google Play를 방문하여 쇼핑을 즐기세요. 동기화의 번거로움 없이 Android 휴대전화나 태블릿에서 즉시 구매하고 즐길 수 있습니다." name="Description">
 	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/nav.css">
-	<link rel="stylesheet" href="./css/actionbar.css">
-	<!-- <link rel="stylesheet" href="./css/actionbar-mobile.css"> -->
+	<!-- <link rel="stylesheet" href="./css/header.css"> -->
+	<!-- <link rel="stylesheet" href="./css/nav.css"> -->
+	<!-- <link rel="stylesheet" href="./css/actionbar.css"> -->
+	<link rel="stylesheet" href="./css/actionbar-mobile.css">
 	<link rel="stylesheet" href="./css/cluster.css">
 	<link rel="stylesheet" href="./css/card.css">
 	<link rel="stylesheet" href="./css/footer.css">
 </head>
-<body>
-	<!-- header start -->
-	<header class="header-content">
-		<div class="header-container header-menu-container">
-			<div class="header-menu">
-				<div class="app-icon-container">
-					<a class="app-icon" href="http://www.google.co.kr/intl/ko/options/" title="앱"></a>
-				</div>
-				<div class="login-icon-container">
-					<a class="login-icon-link">로그인</a>
-				</div>
-			</div>
-		</div>
-		<div class="header-container header-play-container">
-			<div class="play-link-container">
-				<a class="play-link" href="" title="Google Play">
-					<span class="play-link-image"></span>
-				</a>
-			</div>
-		</div>
-		<div class="header-container header-serach-container">
-			<div class="header-search-wrapper">
-				<div class="header-search-bar">
-					<form class="header-search-form">
-						<fieldset class="header-search-fieldset">
-							<div class="header-search-form-wrapper">
-								<input class="header-search-form" type="text" value placeholder="검색">
-							</div>
-						</fieldset>
-						<div class="header-search-button-wrapper">
-							<button class="header-search-button">
-								<span class="search-icon"></span>
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="header-placeholder"></div>
-	<!-- header end -->
+<body class="phone-optimized">
 	<!-- wrapper-with-footer start -->
 	<div class="wrapper-with-footer" id="wrapper">
-		<div class="nav-container">
-			<span class="show-all-hover-zone">
-				<span class="hover-arrow"></span>
+		<div class="mobile-action-bar">
+			<span class="action-bar-menu-button">
+				<span class="menu-icon"></span>
 			</span>
-			<nav class="nav">
-				<li class="nav-list-item books visible-item">
-					<a class="menu-link selected">
-						<span class="hover-target">
-							<span class="icon-container">
-								<span class="icon"></span>
-							</span>
-							<span class="title">도서</span>
-						</span>
-					</a>
-					<ul class="sub-nav non-store-sub-nav">
-						<li class="sub-nav-option">
-							<a class="library-link">내 책</a>
-						</li>
-						<li class="sub-nav-option">
-							<a class="shop-link chosen">쇼핑하기</a>
-						</li>
-					</ul>
-				</li>
-			</nav>
+			<a class="play-logo" href="/store"></a>
+			<span class="action-bar-search-button">
+				<span class="search-icon"></span>
+			</span>
 		</div>
-		<nav class="action-bar-container">
-			<div class="action-bar-inner">
-				<div class="action-bar books">
-					<div class="action-bar-item">
-						<div class="action-bar-dropdown-container">
-							<div class="action-bar-dropdown">
-								<button class="action-bar-dropdown-top">
-									<span class="title">장르</span>
-									<span class="dropdown-icon"></span>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="action-bar-item">
-						<div class="action-bar-spacer"></div>
-					</div>
-					<div class="action-bar-item">
-						<div class="action-bar-link active">
-							<a class="action-bar-link-title">홈</a>
-						</div>
-					</div>
-					<div class="action-bar-item">
-						<div class="action-bar-link">
-							<a class="action-bar-link-title">인기 차트</a>
-						</div>
-					</div>
-					<div class="action-bar-item">
-						<div class="action-bar-link">
-							<a class="action-bar-link-title">신간</a>
-						</div>
-					</div>
-					<div class="action-bar-aux">
-						<div class="action-bar-item">
-							<button class="action-bar-link action-bar-help play-button small">
-								<span class="action-bar-link-title"></span>
-							</button>
-						</div>
-						<div class="action-bar-item settings-gear-menu play-button small">
-							<div class="action-bar-dropdown-container">
-								<div class="action-bar-dropdown">
-									<button class="action-bar-dropdown-top">
-										<span class="title"></span>
-										<span class="dropdown-icon"></span>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
 		<main id="body-content">
+			<div class="vertical-shortcuts">
+				<ul class="vertical-shortcuts-inner">
+					<li class="shortcut">
+						<a class="play-button" href="/books">내 책</a>
+					</li>
+					<li class="shortcut">
+						<a class="play-button" href="/store/books/new">신규 출시</a>
+					</li>
+					<li class="shortcut">
+						<a class="play-button" href="/store/books/top">인기 차트</a>
+					</li>
+				</ul>
+			</div>
 			<!-- browse-page start -->
 			<div class="browse-page">
 				<!-- cluster-container start -->
@@ -653,18 +560,20 @@
 				<!-- cluster-container end -->
 			</div>
 			<!-- browse-page end -->
-		</div>
-		<!-- footer start -->
-		<footer>
-			<div class="footer-links-container">
-				<span class="copyright">©2014 Google</span>
-				<a class="footer-link id-no-nav" href="https://play.google.com/intl/ko_kr/about/play-terms.html" target="_blank">사이트 서비스 약관</a>
-				<a class="footer-link id-no-nav" href="https://play.google.com/intl/ko_kr/about/device-terms.html" target="_blank">기기 판매약관</a>
-				<a class="footer-link id-no-nav" href="https://support.google.com/googleplay/bin/answer.py?answer=1196018&amp;hl=ko" target="_blank">개인정보취급방침</a>
-				<a class="footer-link id-no-nav" href="http://developer.android.com/index.html" target="_blank">개발자</a>
+			<!-- footer-content start -->
+			<div id="footer-content">
+				<button class="play-button" id="show-more-button" style="">더보기</button>
+				<div class="footer">
+					<div class="footer-links-container">
+						<span class="copyright">©2014 Google</span>
+						<a class="footer-link id-no-nav" href="https://play.google.com/intl/ko_kr/about/play-terms.html" target="_blank">사이트 서비스 약관</a>
+						<a class="footer-link id-no-nav" href="https://play.google.com/intl/ko_kr/about/device-terms.html" target="_blank">기기 판매약관</a>
+						<a class="footer-link id-no-nav" href="https://support.google.com/googleplay/bin/answer.py?answer=1196018&amp;hl=ko&amp;authuser=0" target="_blank">개인정보취급방침</a> <a class="footer-link id-no-nav" href="http://developer.android.com/index.html" target="_blank">개발자</a>
+					</div>
+				</div>
 			</div>
-		</footer>
-		<!-- footer end -->
+			<!-- footer-content end -->
+		</main>
 	</div>
 	<!-- wrapper-with-footer end -->
 </body>

@@ -5,6 +5,10 @@
 	background-size: contain;
 }
 
+.nav .books .chosen {
+	color: #1380b5;
+}
+
 .nav-container {
 	background-color: rgba(245, 245, 245, 0.952941);
 	background: #f5f5f5;

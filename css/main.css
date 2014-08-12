@@ -1,4 +1,4 @@
-/* tag attribute reset */
+/* css reset */
 
 html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, caption, tbody, tfoot, thead, tr, th, td, form, fieldset, embed, object, applet {
 	border: 0;
@@ -7,12 +7,23 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl, dt, dd, ol, ul, li, table, 
 }
 
 
-/* button global attribute */
+/* tag */
+
+a {
+	text-decoration: none;
+}
+
+a, a:visited {
+	color: #333;
+}
 
 button {
+	box-sizing: initial;
 	-webkit-font-smoothing: inherit;
+	align-items: initial;
 	background: none;
 	border: 0;
+	box-sizing: initial;
 	color: inherit;
 	font: inherit;
 	margin: 0;
@@ -21,36 +32,36 @@ button {
 }
 
 
-/* main container */
+/* body */
 
 body {
 	background-color: #e5e5e5;
 	color: #333;
+	font-family: "Roboto",Arial,sans-serif;
 	font-size: 13px;
+	font-weight: 300;
+	line-height: 1.4;
 	height: 100%;
 }
 
-#wrapper {
-	position: relative;
-	min-height: 100%;
-	padding-bottom: 50px;
-}
 
-main {
-	float: right;
-	width: 100%;
-}
-
-/* button */
+/* play-button */
 
 .play-button {
+	border-radius: 2px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+	box-sizing: border-box;
+	transition: all .2s;
 	background-color: #fff;
 	border: 1px solid rgba(0,0,0,0.17);
 	color: #737373;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
 	height: 36px;
+	line-height: 34px;
 	min-width: 40px;
 	padding: 0 20px;
 	position: relative;
@@ -66,127 +77,25 @@ main {
 	padding: 0 13px;
 }
 
+.play-button.books {
+	background-color: #1aa1e1;
+	border: 1px;
+	color: #fff;
+	line-height: 36px;
+}
 
-/* header */
+.play-button.books.small {
+	line-height: 30px;
+}
 
-header {
-	width: 100%;
+/* paragraph-end */
+
+.paragraph-end {
+	background: linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));
+	bottom: 0;
+	height: 25px;
+	max-height: 100%;
 	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-}
-
-.header-content {
-	height: 60px;
-	width: 100%;
-	background: #f1f1f1;
-}
-
-header, #header-placeholder {
-	height: 60px;
-}
-
-.play-icon-container {
-	height: 100%;
-	width: 244px;
-	float: left;
-	line-height: 58px;
-	vertical-align: middle;
-	padding-top: 10px;
-}
-
-.play-link-container {
-	padding: 0 30px 0 30px;
-}
-
-.play-link {
-	display: inline-block;
-	outline: none;
-	vertical-align: middle;
-}
-
-.play-link-image {
-	display: block;
-	background-image: url('http://www.gstatic.com/android/market_images/web/play_logo_x2.png');
-	width: 183px;
-	height: 39px;
-	background-size: 183px 39px;
-}
-
-.header-serach-container {
-	width: 650px;
-	float: left;
-	padding-top: 15px;
-}
-
-.header-search-form {
-	background: transparent;
-	border: none;
-	margin-top: 4px;
-	padding: 0;
-	vertical-align: top;
-	width: 100%;
-	color: #222;
-	font: 16px arial,sans-serif;
-}
-
-.header-search-fieldset {
-	float: left;
-}
-
-.header-search-wrapper {
-	height: 28px;
-	background: #fff;
-	background-clip: padding-box;
-	border: 1px solid #cdcdcd;
-	border-color: rgba(0,0,0,.15);
-	border-right-width: 0;
-}
-
-.header-search-button-wrapper {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.header-search-button {
-	border: 1px solid transparent;
-	height: 30px;
+	right: 0;
 	width: 60px;
-	background: #4285f4;
-	float: left;
-}
-
-.header-serach-button-image {
-	display: block;
-	background-image: url('http://ssl.gstatic.com/gb/images/v2_e41a714c.png');
-	background-size: 112px 1828px;
-	background-position: -69px -349px;
-	display: inline-block;
-	margin: -1px;
-	height: 30px;
-	width: 30px;
-	text-align: center;
-}
-
-
-/* footer */
-
-footer {
-	display: block;
-	background: #e5e5e5;
-	color: #555;
-	font-weight: 400;
-	padding-bottom: 30px;
-	width: 100%;
-	height: 50px;
-}
-
-.footer-links-container {
-	margin-left: 248px;
-	padding: 28px 5px;
-}
-
-.copyright {
-	margin-right: 10px;
 }

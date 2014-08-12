@@ -1,0 +1,103 @@
+/* action-bar */
+
+.mobile-action-bar {
+	background: #fff;
+	border-bottom: 1px solid #aaa;
+	height: 48px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+
+/* action-bar button */
+
+.mobile-action-bar .action-bar-menu-button,
+.mobile-action-bar .action-bar-search-button {
+	cursor: pointer;
+	display: inline-block;
+	height: 46px;
+	position: absolute;
+	top: 0;
+	width: 46px;
+}
+
+.mobile-action-bar .action-bar-menu-button {
+	left: 0;
+}
+
+.mobile-action-bar .action-bar-search-button {
+	right: 0;
+}
+
+
+/* action-bar button icon */
+
+.mobile-action-bar .search-icon,
+.mobile-action-bar .close-icon,
+.mobile-action-bar .menu-icon {
+	background-size: contain;
+	height: 24px;
+	left: 11px;
+	position: absolute;
+	top: 11px;
+	width: 24px;
+}
+
+.mobile-action-bar .play-logo {
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 40px;
+	margin-top: 5px;
+	width: 160px;
+}
+
+/* vertical-shortcuts */
+
+.vertical-shortcuts {
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+.vertical-shortcuts-inner {
+	display: inline-block;
+	text-align: left;
+}
+
+@media screen and (max-width:680px) {
+	.vertical-shortcuts-inner {
+		width: 515px;
+	}
+}
+
+@media screen and (max-width:510px) {
+	.vertical-shortcuts-inner {
+		width: 345px;
+	}
+}
+
+.vertical-shortcuts-inner .shortcut {
+	display: inline-block;
+}
+
+.vertical-shortcuts-inner .play-button {
+	margin: 5px;
+	min-width: 158px;
+}
+
+
+/* background-image */
+
+.mobile-action-bar .search-icon{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABSElEQVRYw+3Z0Q2DIBAGYEdwhOafwBEcwREYwRG6gSN0BEfoCIzgCIxAX3hoiCeCgIc5k3syNffBHYLtrLVdy9EJQAACeDAgdAHoASgAKwADwHph3D3VZbiyAgC8iaSpMADm2wEABgA6InE/NIDXLQCXvLmQ/P9sDFUBgeQ3V1KjF4u7RyFeNQGaSEKdaPaZwOsqADe6e7V8ugwOZlAVBbil0uSoYQKxlQaoK6NGlFPS81IBa+qIHSD8xv6UBPhTPmcALCmDEg1w9e9P95gBMPnPLQUYdwB9BsAogIgeaLeEmm/ipyyjNV5kk2wlHruZK7yd/rZ8oIlekjkdKW21VajQoX5OQbD5rEJsUYIINh+23O90LCI74OLbOBrBCpCCYAeIRbAExCDYAs4iWAPOINgDAog2AASijRIiEOlNLH/yCUAAAhBAKH4d6lEJvw9suwAAAABJRU5ErkJggg==);
+}
+
+.mobile-action-bar .menu-icon{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAV0lEQVRIx+3VQQ0AIAwEwWo5Jfg3VUwQQsM0WQHz6VV31+QKAAAAAAAAAOAwIMlK0i8FAADwE+DFAwC4CfCFAAAALLEhA7DE3igAwL+ASQEAAAAAAIxuAySZPrhcy+LMAAAAAElFTkSuQmCC);
+}
+
+.mobile-action-bar .play-logo {
+	background-image: url(https://ssl.gstatic.com/android/market_images/web/logo_m_play.png);
+}
